@@ -38,8 +38,12 @@ function renderTabelTamu(dataTamu) {
   const baseUrl = document.getElementById('base-url').value.trim();
 
   dataTamu.forEach((tamu, index) => {
+    // Membuat tautan personal
     const linkPersonal = `${baseUrl}?nama=${encodeURIComponent(tamu.nama_tamu)}&instansi=${encodeURIComponent(tamu.instansi)}&kategori=${encodeURIComponent(tamu.kategori)}`;
-    const pesanWA = `Yth. *${tamu.nama_tamu}*\n(${tamu.instansi})\n\nDengan hormat, kami mengundang Bapak/Ibu untuk berpartisipasi dalam acara *Edu Fair & Career Day 2026*.\n\nInformasi lengkap & detail undangan dapat diakses melalui tautan berikut:\n${linkPersonal}\n\nTerima kasih atas perhatian dan kerja samanya.`;
+    
+    // Redaksi Pesan WhatsApp yang Lebih Lengkap & Profesional
+    const pesanWA = `Yth. *${tamu.nama_tamu}*\n*${tamu.instansi}*\n\n_Assalamu'alaikum Wr. Wb. / Selamat Sejahtera,_\\n\\nDengan hormat, kami mengundang Bapak/Ibu pimpinan instansi/mitra untuk hadir dan berpartisipasi dalam ajang pameran tahunan:\n\n🎓 *EDU FAIR & CAREER EXPO 2026*\n"Bridging Future Talents with Higher Education & Industry"\n\n📅 *Hari, Tanggal:* Rabu, 25 November 2026\n⏰ *Waktu:* 08.00 – 15.00 WIB\n📍 *Lokasi:* SMKN 6 Kota Tangerang Selatan\n\nInformasi lengkap mengenai rundown acara, profil booth, dan konfirmasi kehadiran (RSVP) dapat diakses secara eksklusif melalui tautan personal berikut:\n${linkPersonal}\n\nMerupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu berkenan hadir memenuhi undangan ini.\n\nAtas perhatian, waktu, dan kerja sama yang baik, kami ucapkan terima kasih.\n\n*Hormat kami,*\\n*Panitia Edu Fair & Career Expo 2026*`;
+
     const linkWA = `https://wa.me/${tamu.no_whatsapp}?text=${encodeURIComponent(pesanWA)}`;
 
     const row = `
