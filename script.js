@@ -42,8 +42,7 @@ function renderTabelTamu(dataTamu) {
     const linkPersonal = `${baseUrl}?nama=${encodeURIComponent(tamu.nama_tamu)}&instansi=${encodeURIComponent(tamu.instansi)}&kategori=${encodeURIComponent(tamu.kategori)}`;
     
     // Redaksi Pesan WhatsApp yang Lebih Lengkap & Profesional
-    const pesanWA = `Yth. *${tamu.nama_tamu}*\n*${tamu.instansi}*\n\n_Assalamu'alaikum Wr. Wb. Dengan hormat, kami mengundang Bapak/Ibu pimpinan instansi/mitra untuk hadir dan berpartisipasi dalam ajang pameran tahunan:\n\n🎓 *EDU FAIR & CAREER EXPO 2026*\n"Connecting Competence to
-Future: Bekerja, Melanjutkan, Berwirausaha"\n\n *Hari, Tanggal:* Rabu, 25 November 2026\n *Waktu:* 07.00 – 14.00 WIB\n *Lokasi:* SMKN 6 Kota Tangerang Selatan\n\nInformasi lengkap dapat diakses secara eksklusif melalui tautan personal berikut:\n${linkPersonal}\n\nMerupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu berkenan hadir memenuhi undangan ini.\n\nAtas perhatian, waktu, dan kerja sama yang baik, kami ucapkan terima kasih.\n\n*Hormat kami,*\n\n*Panitia Edu Fair & Career Expo 2026*`;
+    const pesanWA = `Yth. *${tamu.nama_tamu}*\n*${tamu.instansi}*\n\n Assalamu'alaikum Wr. Wb. Dengan hormat, kami mengundang Bapak/Ibu pimpinan instansi/mitra untuk hadir dan berpartisipasi dalam ajang pameran tahunan:\n\n🎓 *EDU FAIR & CAREER EXPO 2026*\n"Connecting Competence to Future: Bekerja, Melanjutkan, Berwirausaha"\n\n *Hari, Tanggal:* Rabu, 25 November 2026\n *Waktu:* 07.00 – 14.00 WIB\n *Lokasi:* SMKN 6 Kota Tangerang Selatan\n\nInformasi lengkap dapat diakses secara eksklusif melalui tautan personal berikut:\n${linkPersonal}\n\nMerupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu berkenan hadir memenuhi undangan ini.\n\nAtas perhatian, waktu, dan kerja sama yang baik, kami ucapkan terima kasih.\n\n*Hormat kami,*\n\n*Panitia Edu Fair & Career Expo 2026*`;
 
     const linkWA = `https://wa.me/${tamu.no_whatsapp}?text=${encodeURIComponent(pesanWA)}`;
 
