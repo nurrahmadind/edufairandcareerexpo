@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Blast Undangan - Edu Fair 2026</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+</head>
+<body>
+  <div class="container" style="max-width: 950px;">
+    <div class="hero">
+      <h1>PANEL BLAST UNDANGAN (CSV)</h1>
+      <p>Upload file data-tamu.csv untuk membuat tautan personal dan kirim via WhatsApp</p>
+    </div>
+
+    <div class="section">
+      <div class="info-card" style="margin-bottom: 20px;">
+        <label for="base-url"><strong>1. URL Dasar Web Undangan (Ganti dengan link hosting jika sudah online):</strong></label><br />
+        <input type="text" id="base-url" style="width:100%; padding:8px; margin-top:6px; border:1px solid #cbd5e1; border-radius:6px;" />
+        <br /><br />
+        <label for="csv-file"><strong>2. Pilih File CSV (data-tamu.csv):</strong></label><br />
+        <input type="file" id="csv-file" accept=".csv" style="margin-top:6px;" />
+      </div>
+
+      <h3>Daftar Penerima Undangan</h3>
+      <div style="overflow-x:auto;">
+        <table id="tabel-tamu">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Nama Tamu</th>
+              <th>Instansi</th>
+              <th>Kategori</th>
+              <th>No. WhatsApp</th>
+              <th>Aksi Blast</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="6" style="text-align:center; color:#64748b;">Silakan unggah file data-tamu.csv terlebih dahulu.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
