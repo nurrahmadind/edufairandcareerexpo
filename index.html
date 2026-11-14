@@ -3,50 +3,107 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Undangan Edu Fair & Career Day 2026</title>
+  <title>Undangan Edu Fair & Career Day 2026 - SMKN 6 Tangsel</title>
+  <!-- Google Fonts: Plus Jakarta Sans untuk tampilan modern -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <div class="hero">
-      <div class="badge">OFFICIAL INVITATION</div>
-      <h1>EDU FAIR & CAREER DAY 2026</h1>
-      <p>"Bridging Future Talents with Higher Education & Industry"</p>
-    </div>
+  <div class="page-wrapper">
+    <div class="container">
+      <!-- Header / Hero Banner -->
+      <header class="hero">
+        <div class="hero-pattern"></div>
+        <div class="hero-content">
+          <span class="badge">✨ OFFICIAL INVITATION</span>
+          <h1>EDU FAIR &amp; CAREER DAY 2026</h1>
+          <p class="tagline">"Connecting Competence to Future: Bekerja, Melanjutkan, Berwirausaha"</p>
+        </div>
+      </header>
 
-    <div class="guest-box">
-      <p>Kepada Yth. Bapak/Ibu:</p>
-      <h2 id="tampil-nama">Tamu Undangan</h2>
-      <p id="tampil-instansi">Mitra Pendidikan & Industri</p>
-      <small>Kategori: <span id="tampil-kategori">Umum</span></small>
-    </div>
+      <!-- Kartu Nama Tamu Dinamis -->
+      <section class="guest-section">
+        <div class="guest-box">
+          <div class="guest-label">Kepada Yth. Bapak/Ibu:</div>
+          <h2 id="tampil-nama">Tamu Undangan</h2>
+          <p class="guest-org" id="tampil-instansi">Mitra Pendidikan &amp; Industri</p>
+          <div class="guest-meta">
+            <span class="pill" id="tampil-kategori">Umum</span>
+          </div>
+        </div>
+      </section>
 
-    <div class="section">
-      <h3>Detail Pelaksanaan</h3>
-      <div class="info-grid">
-        <div class="info-card">
-          <strong>📅 Hari & Tanggal</strong>
-          <p>Sabtu, 28 November 2026</p>
-        </div>
-        <div class="info-card">
-          <strong>⏰ Waktu</strong>
-          <p>08.00 – 15.00 WIB</p>
-        </div>
-        <div class="info-card">
-          <strong>📍 Lokasi</strong>
-          <p>Aula Utama SMKN 6 Kota Tangerang Selatan</p>
-        </div>
-        <div class="info-card">
-          <strong>🎪 Fasilitas</strong>
-          <p>Booth Pameran, Sesi Presentasi & Konsumsi</p>
-        </div>
-      </div>
+      <!-- Kata Pengantar Singkat -->
+      <section class="section intro-text">
+        <p>
+          Dengan hormat, kami mengundang Bapak/Ibu untuk hadir dan berpartisipasi dalam gelaran tahunan
+          <strong>SMKN 6 Kota Tangerang Selatan</strong> guna menjembatani kompetensi siswa menuju dunia kerja, perguruan tinggi, dan kewirausahaan.
+        </p>
+      </section>
 
-      <h3>Lokasi Acara</h3>
-      <iframe
-        src="https://www.google.com/maps?q=SMKN+6+Kota+Tangerang+Selatan&output=embed"
-        width="100%" height="220" style="border:0; border-radius:10px;" loading="lazy">
-      </iframe>
+      <!-- Grid Detail Pelaksanaan -->
+      <section class="section">
+        <h3 class="section-title">Detail Pelaksanaan</h3>
+        <div class="info-grid">
+          <div class="info-card">
+            <div class="icon-wrap">📅</div>
+            <div>
+              <strong>Hari &amp; Tanggal</strong>
+              <p>Rabu, 25 November 2026</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="icon-wrap">⏰</div>
+            <div>
+              <strong>Waktu</strong>
+              <p>07.00 – 14.00 WIB</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="icon-wrap">📍</div>
+            <div>
+              <strong>Lokasi</strong>
+              <p>SMKN 6 Kota Tangerang Selatan</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="icon-wrap">🎪</div>
+            <div>
+              <strong>Rangkaian Acara</strong>
+              <p>Sharing Session, Pameran Kampus, dan Hiburan</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Peta Lokasi -->
+      <section class="section">
+        <div class="map-header">
+          <h3 class="section-title" style="margin-bottom: 0; border: none;">Peta Lokasi Acara</h3>
+          <a href="https://maps.google.com/?q=SMKN+6+Kota+Tangerang+Selatan" target="_blank" class="btn-outline">
+            Buka Google Maps ↗
+          </a>
+        </div>
+        <div class="map-frame">
+          <iframe
+            src="https://www.google.com/maps?q=SMKN+6+Kota+Tangerang+Selatan&output=embed"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <p>Panitia Pelaksana Edu Fair &amp; Career Day 2026</p>
+        <small>SMK Negeri 6 Kota Tangerang Selatan</small>
+      </footer>
     </div>
   </div>
 
